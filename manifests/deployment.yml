@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: vikkuazurekubernetstesting 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vikkuazurekubernetstesting
+  template:
+    metadata:
+      labels:
+        app: vikkuazurekubernetstesting 
+    spec:
+      containers:
+        - name: vikkuazurekubernetstesting 
+          image: azurepractice05.azurecr.io/vikkuazurekubernetstesting
+          ports:
+          - containerPort: 80
