@@ -14,7 +14,7 @@ stages:
 #Build stage
 - stage: Build
   displayName: Build Stage
-  Jobs:
+  jobs:
   - job: Build
     displayName: Build Job
     pool:
